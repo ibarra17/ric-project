@@ -1,6 +1,6 @@
 steps:
 - name: 'gcr.io/cloud-builders/docker'
-  args: ['build', '-t', 'gcr.io/cloudrunproject-270900/ric-project:$SHORT_SHA', '.']
+  args: ['build', '-t', 'gcr.io/ric-project/ric-project:$SHORT_SHA', '.']
  - name: 'gcr.io/cloud-builders/docker'
-  args: ['push', 'gcr.io/cloudrunproject-270900/ric-project:$SHORT_SHA']
+  args: ['push', 'gcr.io/ric-project/ric-project:$SHORT_SHA']
  
